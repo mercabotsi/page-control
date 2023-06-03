@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Carousel Slider</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <style>
+
+* {
+		padding: 0;
+		margin: 0;
+	}
+	svg {
+		position: absolute;
+		top: 0;
+		left: 0;
+    width: 100%;
+    height: 100%;
+		box-sizing: border-box;
+		display: block;
+		background-color: #128C7E;
+    background-image: linear-gradient(to bottom, rgba(100, 211, 102, 0.86), #075E54);
+	}
+
+  </style>
+
+</head>
+<body>
+
+<section class="home">
+
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+      <defs>
+        <linearGradient id="bg">
+          <stop offset="0%" style="stop-color:rgba(130, 158, 249, 0.06)"></stop>
+          <stop offset="50%" style="stop-color:rgba(76, 190, 255, 0.6)"></stop>
+          <stop offset="100%" style="stop-color:rgba(115, 209, 72, 0.2)"></stop>
+        </linearGradient>
+        <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+    s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+      </defs>
+      <g>
+        <use xlink:href='#wave' opacity=".3">
+          <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="translate"
+            dur="10s"
+            calcMode="spline"
+            values="270 230; -334 180; 270 230"
+            keyTimes="0; .5; 1"
+            keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+            repeatCount="indefinite" />
+        </use>
+        <use xlink:href='#wave' opacity=".6">
+          <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="translate"
+            dur="8s"
+            calcMode="spline"
+            values="-270 230;243 220;-270 230"
+            keyTimes="0; .6; 1"
+            keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+            repeatCount="indefinite" />
+        </use>
+        <use xlink:href='#wave' opacty=".9">
+          <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="translate"
+            dur="6s"
+            calcMode="spline"
+            values="0 230;-140 200;0 230"
+            keyTimes="0; .4; 1"
+            keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+            repeatCount="indefinite" />
+        </use>
+      </g>
+  </svg>
+  
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+
+    <div class="carousel-controls">
+
+      <center><h1 style="color: aliceblue;">INVENTARIO</h1></center>
+
+      <img src="https://www.mercabotsi.com/static/assets/img/Merca-Botsi-Horizontal.png">
+
+      <!--
+      <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" style="background-image: linear-gradient(to bottom, rgba(100, 211, 102, 0.86), #075E54);"></li>
+        <li data-target="#carousel" data-slide-to="1" style="background-image: linear-gradient(to bottom, rgba(100, 211, 102, 0.86), #075E54);"></li>
+        <li data-target="#carousel" data-slide-to="2" style="background-image: linear-gradient(to bottom, rgba(100, 211, 102, 0.86), #075E54);"></li>
+      </ol>
+      -->
+
+      <a class="carousel-control-prev" role="button" data-slide="prev" href="#carousel">
+        <img src="img/left-arrow.svg" alt="Previous">
+      </a>
+      <a class="carousel-control-next" role="button" data-slide="next" href="#carousel">
+        <img src="img/right-arrow.svg" alt="Next">
+      </a>
+
+    </div>
+    
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="container">          
+          <h2>
+            <a href="https://api.whatsapp.com/send?phone=3116423417" target="_blank">
+            Bot Whatsapp
+            </a>  
+          </h2>
+          <p>Chatbot de MercaBotsi Whatsapp</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container">          
+          <h2>
+            <a href="https://t.me/dev_botsitechbot" target="_blank">
+            Bot Telegram
+            </a>  
+          </h2>
+          <p>Chatbot de MercaBotsi Telegram</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container">          
+          <h2>
+            <a href="https://www.mercabotsi.com/" target="_blank">
+            Page MercaBotsi
+            </a>  
+          </h2>
+          <p>Pagina principal servicios mercaBotsi</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container">          
+          <h2>
+            <a href="https://mercabotsi.github.io/page_tech/" target="_blank">
+            Page Tech
+          </a>
+          </h2>
+          <p>Pagina de servicios a la medida</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container">
+          <h2>
+            <a href="https://api.mercabotsi.com/admin/" target="_blank">
+            APIs (Backend)
+            </a>
+          </h2>
+          <p>Suit de servicios MercaBotsi</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container">
+          <h2>
+            <a href="https://form.mercabotsi.com/v_logueo" target="_blank">
+            Admin (MercaBotsi)
+            </a>
+          </h2>
+          <p>Administrador para comercios.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container">
+          <h2>
+            <a href="https://151b-191-95-20-24.ngrok-free.app/form_consumer?customer=6" target="_blank">
+            Form Registro Consumidores
+            </a>
+          </h2>
+          <p>Formulario de registro para consumidores de los comercios.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container">
+          <h2>
+            <a href="https://api.mercabotsi.com/service_telegram/" target="_blank">
+            Inicio Bot Telegram
+            </a>
+          </h2>
+          <p>Reinicio manual servicio GET Bot Telegram.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container">
+          <h2>
+            <a href="https://status.mercabotsi.com/" target="_blank">
+            Status MercaBotsi
+            </a>
+          </h2>
+          <p>Pagina de seguimiento infraestructura.</p>
+        </div>
+      </div>
+
+    </div>
+  
+  </div>
+</section>
+ 
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
